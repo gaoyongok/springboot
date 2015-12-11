@@ -5,7 +5,7 @@
 	<groupId>com.gis.springboot</groupId>
 	<artifactId>springboot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<!-- Inherit defaults from Spring Boot -->
 	<parent>
@@ -16,7 +16,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jdk.version>1.6</jdk.version>
+		<jdk.version>1.7</jdk.version>
 		<file.encoding>UTF-8</file.encoding>
 		<maven.surefire.version>2.7.2</maven.surefire.version>
 		<maven.resources.version>2.4.3</maven.resources.version>
@@ -39,6 +39,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jetty</artifactId>
+			<scope>provided</scope> 
 		</dependency>
 
 		<dependency>
